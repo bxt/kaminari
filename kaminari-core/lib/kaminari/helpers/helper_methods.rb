@@ -101,7 +101,7 @@ module Kaminari
         entry_name = if entry_name
                        entry_name.pluralize(collection.size)
                      else
-                       collection.entry_name(count: collection.size).downcase
+                       collection.entry_name(count: collection.size)
                      end
 
         if collection.total_pages < 2
